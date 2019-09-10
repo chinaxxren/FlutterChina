@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-//      home: ColumnPage(title: 'Flutter Column'),
 //      home: RowPage(title: 'Flutter Row'),
-//      home: RowColumnPage(title: 'Flutter Row Column'),
-      home: CustomPage(title: 'Flutter Custom'),
+//      home: ColumnPage(title: 'Flutter Column'),
+      home: RowColumnPage(title: 'Flutter Row Column'),
+//      home: CustomPage(title: 'Flutter Custom'),
     );
   }
 }

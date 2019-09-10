@@ -44,8 +44,23 @@ class _RowColumnPageState extends State<RowColumnPage> {
               ],
             ),
             Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(" hello world "),
+                Text(" I am Jack "),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Text(
+                  " hello world ",
+                  style: TextStyle(fontSize: 30.0),
+                ),
+                Text(" I am Jack "),
+              ],
+            ),
+            Row(
               verticalDirection: VerticalDirection.up,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
                   " hello world ",

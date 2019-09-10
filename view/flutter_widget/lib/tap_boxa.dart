@@ -29,8 +29,7 @@ class _TapboxAState extends State<TapBoxA> {
         ),
         width: 200,
         height: 200,
-        decoration: new BoxDecoration(
-            color: _active ? Colors.lightGreen[700] : Colors.grey[600]),
+        decoration: new BoxDecoration(color: _active ? Colors.lightGreen[700] : Colors.grey[600]),
       ),
     );
   }

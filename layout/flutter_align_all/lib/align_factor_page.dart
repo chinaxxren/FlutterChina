@@ -17,8 +17,6 @@ class _AlignFactorPageState extends State<AlignFactorPage> {
         title: Text(widget.title),
       ),
       body: Container(
-        height: 120,
-        width: 120,
         color: Colors.blue[50],
         child: Align(
           heightFactor: 2,

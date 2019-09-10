@@ -18,7 +18,8 @@ class _ColumnPageState extends State<ColumnPage> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          verticalDirection: VerticalDirection.up, // 表示Row纵轴（垂直）的对齐方向，默认是VerticalDirection.down，表示从上到下。
+          crossAxisAlignment: CrossAxisAlignment.end, // 表示子组件在纵轴方向的对齐方式
           children: <Widget>[
             Text(
               'button 1',

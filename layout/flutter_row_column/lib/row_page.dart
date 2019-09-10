@@ -18,7 +18,7 @@ class _RowPageState extends State<RowPage> {
       ),
       body: Center(
         child: Row(
-          textDirection: TextDirection.ltr, // 布局顺序(是从左往右还是从右往左) (1)
+          textDirection: TextDirection.ltr, // 布局顺序(是从左往右还是从右往左) (第一个button 1 在左边还是右边开始的)
           mainAxisAlignment: MainAxisAlignment.end, // 水平空间内对齐方式 当前TextDirection的方向的相对点的start和end(2)
           children: <Widget>[
             Text(

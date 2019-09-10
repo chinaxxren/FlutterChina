@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,8 +25,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,14 +51,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(Icons.thumb_up),
                 onPressed: () => {print("Icon Button")},
               ),
+              RaisedButton.icon(
+                icon: Icon(Icons.send),
+                label: Text("发送"),
+                onPressed: () => {print("发送")},
+              ),
+              OutlineButton.icon(
+                icon: Icon(Icons.add),
+                label: Text("添加"),
+                onPressed: () => {print("添加")},
+              ),
+              FlatButton.icon(
+                icon: Icon(Icons.info),
+                label: Text("详情"),
+                onPressed: () => {print("详情")},
+              ),
               FlatButton(
                 child: Text("Submit"),
                 color: Colors.blue,
                 highlightColor: Colors.blue[700],
                 splashColor: Colors.grey,
                 colorBrightness: Brightness.dark,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                 onPressed: () => {print("Submit Button")},
               ),
               RaisedButton(
@@ -70,8 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 highlightColor: Colors.blue[700],
                 splashColor: Colors.grey,
                 colorBrightness: Brightness.dark,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                 onPressed: () => {print("Submit Button")},
               ),
             ],

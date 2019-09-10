@@ -22,8 +22,7 @@ class _ParentWidgetCState extends State<ParentWidgetC> {
 }
 
 class TapBoxC extends StatefulWidget {
-  TapBoxC({Key, key, this.active, @required this.valueChanged})
-      : super(key: key);
+  TapBoxC({Key, key, this.active, @required this.valueChanged}) : super(key: key);
 
   bool active;
   ValueChanged<bool> valueChanged;

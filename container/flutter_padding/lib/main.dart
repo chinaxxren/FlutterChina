@@ -12,8 +12,8 @@ class PaddingApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-//      home: PaddingDemo1(title: "Padding Demo 1"),
-      home: PaddingDemo2(title: "Padding Demo 2"),
+      home: PaddingDemo1(title: "Padding Demo 1"),
+//      home: PaddingDemo2(title: "Padding Demo 2"),
     );
   }
 }
