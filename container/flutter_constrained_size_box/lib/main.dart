@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-//      home: ConstraintedBox1(title: 'Flutter ConstraintedBox'),
-      home: ConstraintedBox2(title: 'Flutter SizeBox'),
+      home: ConstraintedBox1(title: 'Flutter ConstraintedBox'),
+//      home: ConstraintedBox2(title: 'Flutter SizeBox'),
 //      home: ConstraintedBox3(title: 'Flutter ConstraintedBoxTest'),
     );
   }

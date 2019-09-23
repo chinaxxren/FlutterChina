@@ -10,21 +10,21 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Single Child Scroll View'),
+      home: SingleChildScrollViewPage(title: 'Flutter Single Child Scroll View'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class SingleChildScrollViewPage extends StatefulWidget {
+  SingleChildScrollViewPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _SingleChildScrollViewPageState createState() => _SingleChildScrollViewPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _SingleChildScrollViewPageState extends State<SingleChildScrollViewPage> {
   String text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   @override

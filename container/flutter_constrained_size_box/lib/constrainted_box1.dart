@@ -16,6 +16,8 @@ class _ConstraintedBox1State extends State<ConstraintedBox1> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+
+      // Constrained 强制限制
       body: ConstrainedBox(
         constraints: BoxConstraints(
           minWidth: double.infinity,

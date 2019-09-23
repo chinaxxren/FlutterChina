@@ -51,7 +51,7 @@ class _TabBarPageState extends State<TabBarPage> with SingleTickerProviderStateM
       body: TabBarView(
           controller: _tabController,
           children: _tabs.map((e) {
-            //创建3个Tab页
+            // 创建3个Tab页
             return Container(
               alignment: Alignment.center,
               child: Text(e, textScaleFactor: 5),

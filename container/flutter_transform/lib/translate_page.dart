@@ -20,6 +20,8 @@ class _TranslatePageState extends State<TranslatePage> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Container(
+            color: Colors.greenAccent,
+            padding: EdgeInsets.symmetric(vertical: 150,horizontal: 150),
             child: DecoratedBox(
               decoration: BoxDecoration(color: Colors.red),
               //默认原点为左上角，左移20像素，向上平移5像素

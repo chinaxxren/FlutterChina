@@ -34,7 +34,7 @@ class _ConstraintedBox3State extends State<ConstraintedBox3> {
             ConstrainedBox(
               constraints: BoxConstraints(minWidth: 90.0, minHeight: 20.0),
               child: ConstrainedBox(
-                constraints: BoxConstraints(minWidth: 60.0, minHeight: 60.0),
+                constraints: BoxConstraints(minWidth: 60.0, minHeight: 60.0), //子
                 child: redBox,
               ),
             ),

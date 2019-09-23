@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'translate_page.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -11,7 +13,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SkewYPage(title: 'Flutter Page'),
+      home: TranslatePage(title: 'Flutter Page'),
+//      home: ScalePage(title: 'Flutter Page'),
+//      home: SkewYPage(title: 'Flutter Page'),
     );
   }
 }

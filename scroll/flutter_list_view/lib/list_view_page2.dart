@@ -18,7 +18,7 @@ class _ListViewPage2State extends State<ListViewPage2> {
       ),
       body: ListView.builder(
           itemCount: 100,
-          itemExtent: 50.0, //强制Item高度为50.0
+          itemExtent: 50.0, // 强制Item高度为50.0
           itemBuilder: (BuildContext context, int index) {
             return ListTile(title: Text("$index"));
           }),
