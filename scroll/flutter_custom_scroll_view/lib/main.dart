@@ -30,6 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
+
           //AppBar，包含一个导航栏
           SliverAppBar(
             pinned: true,
