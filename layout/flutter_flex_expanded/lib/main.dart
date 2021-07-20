@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_flex_expanded/expanded_demo.dart';
-import 'expanded_page.dart';
+import 'demo_page.dart';
+import 'expanded_demo.dart';
 import 'flexible_demo.dart';
 
 void main() => runApp(MyApp());
@@ -13,8 +14,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: ExpandedPage(title: 'Flutter Flex Expanded'),
-      home: ExpandedDemo(),
+      home: DemoPage(title: 'Flutter Flex Expanded'),
+      // home: ExpandedDemo(),
       // home: FlexibeDemo(),
     );
   }

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class ExpandedPage extends StatefulWidget {
-  ExpandedPage({Key key, this.title}) : super(key: key);
+class DemoPage extends StatefulWidget {
+  DemoPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _ExpandedPageState createState() => _ExpandedPageState();
+  _DemoPageState createState() => _DemoPageState();
 }
 
-class _ExpandedPageState extends State<ExpandedPage> {
+class _DemoPageState extends State<DemoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
