@@ -35,7 +35,7 @@ class _ProgressIndicatorPageState extends State<ProgressIndicatorPage> {
               child: LinearProgressIndicator(
                 backgroundColor: Colors.grey[200],
                 valueColor: AlwaysStoppedAnimation(Colors.blue),
-                value: .5,
+                value: .8,
               ),
             ),
             // 圆形进度条直径指定为100

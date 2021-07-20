@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_progress_indicator/progress_indicator_page.dart';
-
+import 'progress_indicator_page.dart';
 import 'progress_animate_page.dart';
 
 void main() => runApp(MyApp());
@@ -13,8 +12,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-//      home: ProgressIndicatorPage(),
-      home: ProgressAnimatePage(),
+      home: ProgressIndicatorPage(),
+//       home: ProgressAnimatePage(),
     );
   }
 }
