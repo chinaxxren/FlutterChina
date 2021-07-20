@@ -1,9 +1,9 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,8 +26,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  TapGestureRecognizer _tapRecognizer;
+
   @override
   Widget build(BuildContext context) {
+    _tapRecognizer = TapGestureRecognizer();
+    _tapRecognizer.onTap = () {
+      print("click text tap");
+    };
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -72,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(
                   color: Colors.blue,
                 ),
-                recognizer: null,
+                recognizer: _tapRecognizer,
               ),
             ],
           )),

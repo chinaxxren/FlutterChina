@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text("normal"),
                 onPressed: () => {print("Flat Button")},
               ),
-              OutlineButton(
+              OutlinedButton(
                 child: Text("normal"),
                 onPressed: () => {print("Outline Button")},
               ),
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 label: Text("发送"),
                 onPressed: () => {print("发送")},
               ),
-              OutlineButton.icon(
+              OutlinedButton.icon(
                 icon: Icon(Icons.add),
                 label: Text("添加"),
                 onPressed: () => {print("添加")},

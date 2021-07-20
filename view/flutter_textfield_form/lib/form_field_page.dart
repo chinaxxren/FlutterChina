@@ -7,7 +7,7 @@ class FormFieldPage extends StatefulWidget {
 class _FormFieldPageState extends State<FormFieldPage> {
   TextEditingController _usernameEditingController = new TextEditingController();
   TextEditingController _passwordEditingController = new TextEditingController();
-  GlobalKey _formKey = new GlobalKey();
+  GlobalKey _formKey = new GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +63,11 @@ class _FormFieldPageState extends State<FormFieldPage> {
                           // 通过_formKey.currentState 获取FormState后，
                           // 调用validate()方法校验用户名密码是否合法，校验
                           // 通过后再提交数据。
-                          if ((_formKey.currentState as FormState).validate()) {}
+                          if ((_formKey.currentState as FormState).validate()) {
+                            print("validate success!");
+                          } else {
+                            print("validate error!");
+                          }
                         },
                       ),
                     ),

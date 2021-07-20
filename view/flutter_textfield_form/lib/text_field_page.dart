@@ -22,10 +22,13 @@ class _TextFieldPageState extends State<TextFieldPage> {
             TextField(
               autofocus: true,
               decoration: InputDecoration(
-                labelText: "用户名",
+                // labelText: "用户名",
                 hintText: "用户名或邮箱",
                 prefixIcon: Icon(Icons.person),
               ),
+              onChanged: (str) {
+                print(str);
+              },
               controller: controller,
             ),
             TextField(

@@ -48,11 +48,18 @@ class _CustomFieldPageState extends State<CustomFieldPage> {
                 child: TextField(
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                    labelText: "email",
-                    hintText: "用户名或邮箱",
-                    prefixIcon: Icon(Icons.email),
-                    border: InputBorder.none,
-                  ),
+                      labelText: "email",
+                      hintText: "用户名或邮箱",
+                      prefixIcon: Icon(Icons.email),
+                      border: InputBorder.none,
+                      // 未获得焦点下划线设为灰色
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey),
+                      ),
+                      //获得焦点下划线设为蓝色
+                      focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.blue),
+                      )),
                 ),
                 decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.grey[200], width: 1.0))),
               ),
