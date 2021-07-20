@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WrapPage(title: 'Flex Page'),
-//      home: FlowPage(title: 'Flow Page'),
+      // home: WrapPage(title: 'Flex Page'),
+      home: FlowPage(title: 'Flow Page'),
     );
   }
 }
