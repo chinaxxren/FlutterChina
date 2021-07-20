@@ -24,9 +24,10 @@ class _StackPositionPage2State extends State<StackPositionPage2> {
           children: <Widget>[
             Positioned(
               left: 18.0,
-              child: Text("I am Jack", style: TextStyle(color: Colors.white)),
+              child: Text("I am Jack"s, style: TextStyle(color: Colors.white)),
             ),
-            Container( //未定位widget占满Stack整个空间
+            Container(
+              //未定位widget占满Stack整个空间
               child: Text("Hello world", style: TextStyle(color: Colors.white)),
               color: Colors.red,
             ),

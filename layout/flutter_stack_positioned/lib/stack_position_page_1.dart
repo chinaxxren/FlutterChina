@@ -35,7 +35,7 @@ class _StackPositionPage1State extends State<StackPositionPage1> {
                 child: Text("I'm Jack"),
               ),
               Positioned(
-                top: 18.0,
+                top: 20.0,
                 child: Text("Your friends"),
               ),
             ],
