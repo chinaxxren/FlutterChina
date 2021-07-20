@@ -12,7 +12,7 @@ class FractionalOffsetPage extends StatelessWidget {
         width: 120.0,
         color: Colors.blue[50],
         child: Align(
-          alignment: FractionalOffset(0.2, 0.6),
+          alignment: FractionalOffset(1, 1),
           child: FlutterLogo(
             size: 60,
           ),
