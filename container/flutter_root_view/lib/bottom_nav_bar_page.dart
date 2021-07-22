@@ -20,7 +20,9 @@ class _BottomNavBarPageState extends State<BottomNavBarPage> {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.share),
-            onPressed: null,
+            onPressed: () {
+              print("on pressed");
+            },
           ),
         ],
       ),
@@ -29,9 +31,9 @@ class _BottomNavBarPageState extends State<BottomNavBarPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
-          BottomNavigationBarItem(icon: Icon(Icons.business), title: Text('Business')),
-          BottomNavigationBarItem(icon: Icon(Icons.school), title: Text('School')),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Business'),
+          BottomNavigationBarItem(icon: Icon(Icons.school), label: 'School'),
         ],
         currentIndex: _selectIndex,
         fixedColor: Colors.blue,
