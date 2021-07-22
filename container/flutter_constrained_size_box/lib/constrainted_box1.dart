@@ -25,6 +25,7 @@ class _ConstraintedBox1State extends State<ConstraintedBox1> {
         ),
         child: Container(
           height: 5.0,
+          color: Colors.green,
           decoration: BoxDecoration(
             color: Colors.red,
           ),
