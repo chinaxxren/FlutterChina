@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 import 'translate_page.dart';
+import 'scale_page.dart';
+import 'rotate_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,9 +15,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TranslatePage(title: 'Flutter Page'),
-//      home: ScalePage(title: 'Flutter Page'),
-//      home: SkewYPage(title: 'Flutter Page'),
+      // home: SkewYPage(title: 'Flutter Page'),
+      // home: TranslatePage(title: 'Flutter Page'),
+      home: ScalePage(title: 'Flutter Page'),
     );
   }
 }
@@ -36,22 +38,19 @@ class _SkewYPageState extends State<SkewYPage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Container(
-            color: Colors.black,
-            child: Transform(
-              alignment: Alignment.topRight, //相对于坐标系原点的对齐方式
-              transform: new Matrix4.skewY(0.3), //沿Y轴倾斜0.3弧度
-              child: Container(
-                padding: const EdgeInsets.all(8.0),
-                color: Colors.deepOrange,
-                child: const Text('Apartment for rent!'),
-              ),
+      body: Center(
+        child: Container(
+          color: Colors.black,
+          child: Transform(
+            alignment: Alignment.topRight, //相对于坐标系原点的对齐方式
+            transform: Matrix4.skewY(0.3), //沿Y轴倾斜0.3弧度
+            child: Container(
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.deepOrange,
+              child: const Text('Apartment for rent!'),
             ),
           ),
-        ],
+        ),
       ),
     );
   }

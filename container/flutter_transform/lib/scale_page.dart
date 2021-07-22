@@ -17,19 +17,16 @@ class _ScalePageState extends State<ScalePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Container(
-            child: DecoratedBox(
-              decoration: BoxDecoration(color: Colors.red),
-              child: Transform.scale(
-                scale: 1.5, //放大到1.5倍
-                child: Text("Hello world"),
-              ),
+      body: Center(
+        child: Container(
+          child: DecoratedBox(
+            decoration: BoxDecoration(color: Colors.red),
+            child: Transform.scale(
+              scale: 1.5, //放大到1.5倍
+              child: Text("Hello world"),
             ),
           ),
-        ],
+        ),
       ),
     );
   }
