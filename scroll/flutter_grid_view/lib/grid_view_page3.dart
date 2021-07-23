@@ -17,15 +17,19 @@ class _GridViewPage3State extends State<GridViewPage3> {
         title: Text(widget.title),
       ),
       body: GridView(
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 120.0, childAspectRatio: 2.0), //宽高比为2
-          children: <Widget>[
-            Icon(Icons.ac_unit),
-            Icon(Icons.airport_shuttle),
-            Icon(Icons.all_inclusive),
-            Icon(Icons.beach_access),
-            Icon(Icons.cake),
-            Icon(Icons.free_breakfast)
-          ]),
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 120.0,
+          childAspectRatio: 2.0,
+        ), //宽高比为2
+        children: <Widget>[
+          Icon(Icons.ac_unit),
+          Icon(Icons.airport_shuttle),
+          Icon(Icons.all_inclusive),
+          Icon(Icons.beach_access),
+          Icon(Icons.cake),
+          Icon(Icons.free_breakfast),
+        ],
+      ),
     );
   }
 }

@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-//      home: GridViewPage1(title: 'Flutter Demo'),
-//      home: GridViewPage2(title: 'Flutter Demo'),
-//      home: GridViewPage3(title: 'Flutter Demo'),
-//      home: GridViewPage4(title: 'Flutter Demo'),
+      // home: GridViewPage1(title: 'Flutter Demo'),
+      // home: GridViewPage2(title: 'Flutter Demo'),
+      // home: GridViewPage3(title: 'Flutter Demo'),
+      // home: GridViewPage4(title: 'Flutter Demo'),
       home: GridViewPage5(title: 'Flutter Demo'),
     );
   }
