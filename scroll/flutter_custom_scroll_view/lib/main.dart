@@ -30,7 +30,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
-
           //AppBar，包含一个导航栏
           SliverAppBar(
             pinned: true,
@@ -71,15 +70,17 @@ class _MyHomePageState extends State<MyHomePage> {
           //List
           SliverFixedExtentList(
             itemExtent: 50.0,
-            delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
-              //创建列表项
-              return Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlue[100 * (index % 9)],
-                child: Text('list item $index'),
-              );
-            }, childCount: 50 //50个列表项
-                ),
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                //创建列表项
+                return Container(
+                  alignment: Alignment.center,
+                  color: Colors.lightBlue[100 * (index % 9)],
+                  child: Text('list item $index'),
+                );
+              },
+              childCount: 50, //50个列表项
+            ),
           ),
         ],
       ),
