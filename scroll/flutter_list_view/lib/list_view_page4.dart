@@ -24,9 +24,7 @@ class _ListViewPage4State extends State<ListViewPage4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Infinite List"),
-      ),
+      appBar: AppBar(title: Text("Infinite List")),
       body: ListView.separated(
         itemCount: _words.length,
         itemBuilder: (context, index) {
@@ -47,13 +45,11 @@ class _ListViewPage4State extends State<ListViewPage4> {
               return Container(
                 alignment: Alignment.center,
                 padding: EdgeInsets.all(16.0),
-                child: Text(
-                  "没有更多了",
-                  style: TextStyle(color: Colors.grey),
-                ),
+                child: Text("没有更多了", style: TextStyle(color: Colors.grey)),
               );
             }
           }
+
           //显示单词列表项
           return ListTile(title: Text(_words[index]));
         },

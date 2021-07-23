@@ -11,9 +11,7 @@ class ListViewPage3 extends StatefulWidget {
 
 class _ListViewPage3State extends State<ListViewPage3> {
   //下划线widget预定义以供复用。
-  Widget divider1 = Divider(
-    color: Colors.blue,
-  );
+  Widget divider1 = Divider(color: Colors.blue);
   Widget divider2 = Divider(color: Colors.green);
 
   @override
